@@ -5,13 +5,13 @@
 #include"Computing.h"
 #include<Windows.h>
 using namespace std;
-rectangle FileRead(string path); // Функция, считывающая из файла и возвращающая исходные данные первого прямоугольника
-rectangle FileReadSecond(string path); // Функция, считывающая из файла и возвращающая исходные данные второго прямоугольника
-void FileWriteResult(string str, rectangle firstRec, rectangle secondRec); // Функция, записывающая результат программы в файл
-void FileWriteData(rectangle firstRec, rectangle secondRec); // Функция, записывающая исходные данные в файл
-                                                             // с возможностью последующего чтения из него
-bool FileExist(string path); // Проверка на существование файла
-bool ReadOnlyChecking(string path); //Функция, проверяющая, является ли файл доступным только для чтения. Принимает путь к файлу.
-bool FileCorrectChecking(string path); //Функция, проверяющая корректность файла
-bool FileReadCorrectChecking(string path); //Функция, проверяющая корректность файла, из которого считывают данные
-bool FileOpenChecking(string path); // Функция, проверяющая открытие файла
+rectangle FileRead(string path); // Р¤СѓРЅРєС†РёСЏ, СЃС‡РёС‚С‹РІР°СЋС‰Р°СЏ РёР· С„Р°Р№Р»Р° Рё РІРѕР·РІСЂР°С‰Р°СЋС‰Р°СЏ РёСЃС…РѕРґРЅС‹Рµ РґР°РЅРЅС‹Рµ РїРµСЂРІРѕРіРѕ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°
+rectangle FileReadSecond(string path); // Р¤СѓРЅРєС†РёСЏ, СЃС‡РёС‚С‹РІР°СЋС‰Р°СЏ РёР· С„Р°Р№Р»Р° Рё РІРѕР·РІСЂР°С‰Р°СЋС‰Р°СЏ РёСЃС…РѕРґРЅС‹Рµ РґР°РЅРЅС‹Рµ РІС‚РѕСЂРѕРіРѕ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°
+void FileWriteResult(string str, rectangle firstRec, rectangle secondRec); // Р¤СѓРЅРєС†РёСЏ, Р·Р°РїРёСЃС‹РІР°СЋС‰Р°СЏ СЂРµР·СѓР»СЊС‚Р°С‚ РїСЂРѕРіСЂР°РјРјС‹ РІ С„Р°Р№Р»
+void FileWriteData(rectangle firstRec, rectangle secondRec); // Р¤СѓРЅРєС†РёСЏ, Р·Р°РїРёСЃС‹РІР°СЋС‰Р°СЏ РёСЃС…РѕРґРЅС‹Рµ РґР°РЅРЅС‹Рµ РІ С„Р°Р№Р»
+                                                             // СЃ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊСЋ РїРѕСЃР»РµРґСѓСЋС‰РµРіРѕ С‡С‚РµРЅРёСЏ РёР· РЅРµРіРѕ
+bool FileExist(string path); // РџСЂРѕРІРµСЂРєР° РЅР° СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёРµ С„Р°Р№Р»Р°
+bool ReadOnlyChecking(string path); //Р¤СѓРЅРєС†РёСЏ, РїСЂРѕРІРµСЂСЏСЋС‰Р°СЏ, СЏРІР»СЏРµС‚СЃСЏ Р»Рё С„Р°Р№Р» РґРѕСЃС‚СѓРїРЅС‹Рј С‚РѕР»СЊРєРѕ РґР»СЏ С‡С‚РµРЅРёСЏ. РџСЂРёРЅРёРјР°РµС‚ РїСѓС‚СЊ Рє С„Р°Р№Р»Сѓ.
+bool FileCorrectChecking(string path); //Р¤СѓРЅРєС†РёСЏ, РїСЂРѕРІРµСЂСЏСЋС‰Р°СЏ РєРѕСЂСЂРµРєС‚РЅРѕСЃС‚СЊ С„Р°Р№Р»Р°
+bool FileReadCorrectChecking(string path); //Р¤СѓРЅРєС†РёСЏ, РїСЂРѕРІРµСЂСЏСЋС‰Р°СЏ РєРѕСЂСЂРµРєС‚РЅРѕСЃС‚СЊ С„Р°Р№Р»Р°, РёР· РєРѕС‚РѕСЂРѕРіРѕ СЃС‡РёС‚С‹РІР°СЋС‚ РґР°РЅРЅС‹Рµ
+bool FileOpenChecking(string path); // Р¤СѓРЅРєС†РёСЏ, РїСЂРѕРІРµСЂСЏСЋС‰Р°СЏ РѕС‚РєСЂС‹С‚РёРµ С„Р°Р№Р»Р°

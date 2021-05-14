@@ -7,15 +7,15 @@ using namespace std;
 
 int main() {
 	setlocale(LC_ALL, "RU");
-	Greeting(); // Вывод приветствия
-	TestingModules(); // Проведение модульных тестов
+	Greeting(); // Р’С‹РІРѕРґ РїСЂРёРІРµС‚СЃС‚РІРёСЏ
+	TestingModules(); // РџСЂРѕРІРµРґРµРЅРёРµ РјРѕРґСѓР»СЊРЅС‹С… С‚РµСЃС‚РѕРІ
 	rectangle firstRec, secondRec;
 	bool one = true;
 	while (true) {
 		if (MenuImportData() == true) {
-			do { // Чтение исходных данных из файла
+			do { // Р§С‚РµРЅРёРµ РёСЃС…РѕРґРЅС‹С… РґР°РЅРЅС‹С… РёР· С„Р°Р№Р»Р°
 				ifstream fin;
-				cout << "Введите путь к файлу:" << endl;
+				cout << "Р’РІРµРґРёС‚Рµ РїСѓС‚СЊ Рє С„Р°Р№Р»Сѓ:" << endl;
 				string path;
 				int neededData = 12;
 				bool fileReadCorrectCheck = 0;
@@ -23,9 +23,9 @@ int main() {
 				cin >> path;
 				SetConsoleCP(866);
 				fileReadCorrectCheck = FileReadCorrectChecking(path);
-				while (fileReadCorrectCheck == false) { // Проверка корректности файла
-					cout << "Ошибка открытия файла. Пожалуйста попробуйте еще раз." << endl;
-					cout << "Введите путь к файлу:" << endl;
+				while (fileReadCorrectCheck == false) { // РџСЂРѕРІРµСЂРєР° РєРѕСЂСЂРµРєС‚РЅРѕСЃС‚Рё С„Р°Р№Р»Р°
+					cout << "РћС€РёР±РєР° РѕС‚РєСЂС‹С‚РёСЏ С„Р°Р№Р»Р°. РџРѕР¶Р°Р»СѓР№СЃС‚Р° РїРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰Рµ СЂР°Р·." << endl;
+					cout << "Р’РІРµРґРёС‚Рµ РїСѓС‚СЊ Рє С„Р°Р№Р»Сѓ:" << endl;
 					SetConsoleCP(1251);
 					cin >> path;
 					SetConsoleCP(866);
@@ -34,7 +34,7 @@ int main() {
 				fin.open(path);
 				int countData = 0;
 				double tempData = 0;
-				while (fin) { // Проверка на количество исходных данных
+				while (fin) { // РџСЂРѕРІРµСЂРєР° РЅР° РєРѕР»РёС‡РµСЃС‚РІРѕ РёСЃС…РѕРґРЅС‹С… РґР°РЅРЅС‹С…
 					fin >> tempData;
 					if (fin.fail()) {
 						break;
@@ -45,15 +45,15 @@ int main() {
 				}
 				fin.close();
 				while (countData != neededData) {
-					cout << "В файле недостаточно данных. Пожалуйста попробуйте еще раз." << endl;
-					cout << "Введите путь к файлу:" << endl;
+					cout << "Р’ С„Р°Р№Р»Рµ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґР°РЅРЅС‹С…. РџРѕР¶Р°Р»СѓР№СЃС‚Р° РїРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰Рµ СЂР°Р·." << endl;
+					cout << "Р’РІРµРґРёС‚Рµ РїСѓС‚СЊ Рє С„Р°Р№Р»Сѓ:" << endl;
 					SetConsoleCP(1251);
 					cin >> path;
 					SetConsoleCP(866);
 					fileReadCorrectCheck = FileReadCorrectChecking(path);
-					while (fileReadCorrectCheck == false) { // Проверка корректности файла
-						cout << "Ошибка открытия файла. Пожалуйста попробуйте еще раз." << endl;
-						cout << "Введите путь к файлу:" << endl;
+					while (fileReadCorrectCheck == false) { // РџСЂРѕРІРµСЂРєР° РєРѕСЂСЂРµРєС‚РЅРѕСЃС‚Рё С„Р°Р№Р»Р°
+						cout << "РћС€РёР±РєР° РѕС‚РєСЂС‹С‚РёСЏ С„Р°Р№Р»Р°. РџРѕР¶Р°Р»СѓР№СЃС‚Р° РїРѕРїСЂРѕР±СѓР№С‚Рµ РµС‰Рµ СЂР°Р·." << endl;
+						cout << "Р’РІРµРґРёС‚Рµ РїСѓС‚СЊ Рє С„Р°Р№Р»Сѓ:" << endl;
 						SetConsoleCP(1251);
 						cin >> path;
 						SetConsoleCP(866);
@@ -76,95 +76,95 @@ int main() {
 				firstRec = FileRead(path);
 				secondRec = FileReadSecond(path);
 				cout << endl;
-				// Проверка полученных исходных данных на построение прямоугольников
+				// РџСЂРѕРІРµСЂРєР° РїРѕР»СѓС‡РµРЅРЅС‹С… РёСЃС…РѕРґРЅС‹С… РґР°РЅРЅС‹С… РЅР° РїРѕСЃС‚СЂРѕРµРЅРёРµ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєРѕРІ
 				if (CheckAngle_textless(firstRec) != one) {
-					cout << "Полученные исходные данные точек первого прямоугольника не образуют прямоугольник" << endl;
+					cout << "РџРѕР»СѓС‡РµРЅРЅС‹Рµ РёСЃС…РѕРґРЅС‹Рµ РґР°РЅРЅС‹Рµ С‚РѕС‡РµРє РїРµСЂРІРѕРіРѕ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР° РЅРµ РѕР±СЂР°Р·СѓСЋС‚ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє" << endl;
 					cout << endl;
 				}
 				if (CheckAngle_textless(secondRec) != one) {
-					cout << "Полученные исходные данные точек второго прямоугольника не образуют прямоугольник" << endl;
+					cout << "РџРѕР»СѓС‡РµРЅРЅС‹Рµ РёСЃС…РѕРґРЅС‹Рµ РґР°РЅРЅС‹Рµ С‚РѕС‡РµРє РІС‚РѕСЂРѕРіРѕ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР° РЅРµ РѕР±СЂР°Р·СѓСЋС‚ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє" << endl;
 					cout << endl;
 				}
 			} while ((CheckAngle_textless(firstRec) != one)
 				|| (CheckAngle_textless(secondRec) != one));
-			cout << "\t" << "Координаты точек первого прямоугольника:" << endl;
-			cout << "Верхняя левая точка:" << endl;
+			cout << "\t" << "РљРѕРѕСЂРґРёРЅР°С‚С‹ С‚РѕС‡РµРє РїРµСЂРІРѕРіРѕ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°:" << endl;
+			cout << "Р’РµСЂС…РЅСЏСЏ Р»РµРІР°СЏ С‚РѕС‡РєР°:" << endl;
 			cout << "x = " << firstRec.lt.x << endl;
 			cout << "y = " << firstRec.lt.y << endl;
-			cout << "Нижняя правая точка:" << endl;
+			cout << "РќРёР¶РЅСЏСЏ РїСЂР°РІР°СЏ С‚РѕС‡РєР°:" << endl;
 			cout << "x = " << firstRec.rb.x << endl;
 			cout << "y = " << firstRec.rb.y << endl;
-			cout << "Верхняя правая точка:" << endl;
+			cout << "Р’РµСЂС…РЅСЏСЏ РїСЂР°РІР°СЏ С‚РѕС‡РєР°:" << endl;
 			cout << "x = " << firstRec.rt.x << endl;
 			cout << "y = " << firstRec.rt.y << endl;
-			cout << "\t" << "Координаты точек второго прямоугольника:" << endl;
-			cout << "Верхняя левая точка:" << endl;
+			cout << "\t" << "РљРѕРѕСЂРґРёРЅР°С‚С‹ С‚РѕС‡РµРє РІС‚РѕСЂРѕРіРѕ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°:" << endl;
+			cout << "Р’РµСЂС…РЅСЏСЏ Р»РµРІР°СЏ С‚РѕС‡РєР°:" << endl;
 			cout << "x = " << secondRec.lt.x << endl;
 			cout << "y = " << secondRec.lt.y << endl;
-			cout << "Нижняя правая точка:" << endl;
+			cout << "РќРёР¶РЅСЏСЏ РїСЂР°РІР°СЏ С‚РѕС‡РєР°:" << endl;
 			cout << "x = " << secondRec.rb.x << endl;
 			cout << "y = " << secondRec.rb.y << endl;
-			cout << "Верхняя правая точка:" << endl;
+			cout << "Р’РµСЂС…РЅСЏСЏ РїСЂР°РІР°СЏ С‚РѕС‡РєР°:" << endl;
 			cout << "x = " << secondRec.rt.x << endl;
 			cout << "y = " << secondRec.rt.y << endl;
 		}
-		else { // Ввод исходных данных с клавиатуры
+		else { // Р’РІРѕРґ РёСЃС…РѕРґРЅС‹С… РґР°РЅРЅС‹С… СЃ РєР»Р°РІРёР°С‚СѓСЂС‹
 			do {
-				cout << "Введите координаты верхней левой точки первого прямоугольника:" << endl;
+				cout << "Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹ РІРµСЂС…РЅРµР№ Р»РµРІРѕР№ С‚РѕС‡РєРё РїРµСЂРІРѕРіРѕ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°:" << endl;
 				cout << "x = ";
 				firstRec.lt.x = NumInDouble();
 				cout << "y = ";
 				firstRec.lt.y = NumInDouble();
-				cout << "Введите координаты нижней правой точки первого прямоугольника:" << endl;
+				cout << "Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹ РЅРёР¶РЅРµР№ РїСЂР°РІРѕР№ С‚РѕС‡РєРё РїРµСЂРІРѕРіРѕ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°:" << endl;
 				cout << "x = ";
 				firstRec.rb.x = NumInDouble();
 				cout << "y = ";
 				firstRec.rb.y = NumInDouble();
-				cout << "Введите координаты верхней правой точки первого прямоугольника:" << endl;
+				cout << "Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹ РІРµСЂС…РЅРµР№ РїСЂР°РІРѕР№ С‚РѕС‡РєРё РїРµСЂРІРѕРіРѕ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°:" << endl;
 				cout << "x = ";
 				firstRec.rt.x = NumInDouble();
 				cout << "y = ";
 				firstRec.rt.y = NumInDouble();
 			} while (CheckAngle(firstRec) != one);
 			do {
-				cout << "Введите координаты верхней левой точки второго прямоугольника:" << endl;
+				cout << "Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹ РІРµСЂС…РЅРµР№ Р»РµРІРѕР№ С‚РѕС‡РєРё РІС‚РѕСЂРѕРіРѕ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°:" << endl;
 				cout << "x = ";
 				secondRec.lt.x = NumInDouble();
 				cout << "y = ";
 				secondRec.lt.y = NumInDouble();
-				cout << "Введите координаты нижней правой точки второго прямоугольника:" << endl;
+				cout << "Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹ РЅРёР¶РЅРµР№ РїСЂР°РІРѕР№ С‚РѕС‡РєРё РІС‚РѕСЂРѕРіРѕ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°:" << endl;
 				cout << "x = ";
 				secondRec.rb.x = NumInDouble();
 				cout << "y = ";
 				secondRec.rb.y = NumInDouble();
-				cout << "Введите координаты верхней правой точки второго прямоугольника:" << endl;
+				cout << "Р’РІРµРґРёС‚Рµ РєРѕРѕСЂРґРёРЅР°С‚С‹ РІРµСЂС…РЅРµР№ РїСЂР°РІРѕР№ С‚РѕС‡РєРё РІС‚РѕСЂРѕРіРѕ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°:" << endl;
 				cout << "x = ";
 				secondRec.rt.x = NumInDouble();
 				cout << "y = ";
 				secondRec.rt.y = NumInDouble();
 			} while (CheckAngle(secondRec) != one);
-			if (MenuExportData() == true) { // Возможность сохранения исходных данных в файл
+			if (MenuExportData() == true) { // Р’РѕР·РјРѕР¶РЅРѕСЃС‚СЊ СЃРѕС…СЂР°РЅРµРЅРёСЏ РёСЃС…РѕРґРЅС‹С… РґР°РЅРЅС‹С… РІ С„Р°Р№Р»
 				FileWriteData(firstRec, secondRec);
 			}
 		}
-		// Вычисление оставшихся точек прямоугольников
+		// Р’С‹С‡РёСЃР»РµРЅРёРµ РѕСЃС‚Р°РІС€РёС…СЃСЏ С‚РѕС‡РµРє РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєРѕРІ
 		firstRec.lb.x = firstRec.lt.x + (firstRec.rb.x - firstRec.rt.x);
 		firstRec.lb.y = firstRec.lt.y - (firstRec.rt.y - firstRec.rb.y);
 		secondRec.lb.x = secondRec.lt.x + (secondRec.rb.x - secondRec.rt.x);
 		secondRec.lb.y = secondRec.lt.y - (secondRec.rt.y - secondRec.rb.y);
-		Intersection_Result(firstRec, secondRec); // Основной алгоритм, проверяющий наличие общей области у прямоугольников
+		Intersection_Result(firstRec, secondRec); // РћСЃРЅРѕРІРЅРѕР№ Р°Р»РіРѕСЂРёС‚Рј, РїСЂРѕРІРµСЂСЏСЋС‰РёР№ РЅР°Р»РёС‡РёРµ РѕР±С‰РµР№ РѕР±Р»Р°СЃС‚Рё Сѓ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєРѕРІ
 		string result = "";
-		if (MenuResult() == true) { // Возможность сохранения результата программы в файл
+		if (MenuResult() == true) { // Р’РѕР·РјРѕР¶РЅРѕСЃС‚СЊ СЃРѕС…СЂР°РЅРµРЅРёСЏ СЂРµР·СѓР»СЊС‚Р°С‚Р° РїСЂРѕРіСЂР°РјРјС‹ РІ С„Р°Р№Р»
 			if (Intersection_Result_textless(firstRec, secondRec) == true) {
-				result = "Прямоугольники имеют общую область";
+				result = "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєРё РёРјРµСЋС‚ РѕР±С‰СѓСЋ РѕР±Р»Р°СЃС‚СЊ";
 				FileWriteResult(result, firstRec, secondRec);
 			}
 			else {
-				result = "Прямоугольники не имеют общей области";
+				result = "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєРё РЅРµ РёРјРµСЋС‚ РѕР±С‰РµР№ РѕР±Р»Р°СЃС‚Рё";
 				FileWriteResult(result, firstRec, secondRec);
 			}
 		} 
-		if (Menu() == false) // Вывод меню после работы программы
+		if (Menu() == false) // Р’С‹РІРѕРґ РјРµРЅСЋ РїРѕСЃР»Рµ СЂР°Р±РѕС‚С‹ РїСЂРѕРіСЂР°РјРјС‹
 			return false;
 	}
 	return 0;

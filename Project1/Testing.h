@@ -1,4 +1,4 @@
 #pragma once
-void TestingModules(); // Тестирование модулей программы
-void CoutingIntersectionResultTesting(rectangle testFirst, rectangle testSecond); // Вывод исходных данных в случае ошибки 
-                                                            // в тестировании основного алгоритма программы
+void TestingModules(); // РўРµСЃС‚РёСЂРѕРІР°РЅРёРµ РјРѕРґСѓР»РµР№ РїСЂРѕРіСЂР°РјРјС‹
+void CoutingIntersectionResultTesting(rectangle testFirst, rectangle testSecond); // Р’С‹РІРѕРґ РёСЃС…РѕРґРЅС‹С… РґР°РЅРЅС‹С… РІ СЃР»СѓС‡Р°Рµ РѕС€РёР±РєРё 
+                                                            // РІ С‚РµСЃС‚РёСЂРѕРІР°РЅРёРё РѕСЃРЅРѕРІРЅРѕРіРѕ Р°Р»РіРѕСЂРёС‚РјР° РїСЂРѕРіСЂР°РјРјС‹

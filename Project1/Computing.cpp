@@ -3,29 +3,29 @@
 
 using namespace std;
 
-// Ôóíêöèÿ ïğîâåğêè êîğğåêòíîñòè ââîäà äëÿ ïåğåìåííîé òèïà double
+// Ğ¤ÑƒĞ½ĞºÑ†Ğ¸Ñ Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ĞºĞ¸ ĞºĞ¾Ñ€Ñ€ĞµĞºÑ‚Ğ½Ğ¾ÑÑ‚Ğ¸ Ğ²Ğ²Ğ¾Ğ´Ğ° Ğ´Ğ»Ñ Ğ¿ĞµÑ€ĞµĞ¼ĞµĞ½Ğ½Ğ¾Ğ¹ Ñ‚Ğ¸Ğ¿Ğ° double
 double NumInDouble() {
 	double variable;
 	while (!(cin >> variable) || (cin.peek() != '\n')) {
 		cin.clear();
 		while (cin.get() != '\n');
-		cout << "Íåêîğğåêòíî ââåäåííûå äàííûå. Ïîæàëóéñòà, ââåäèòå öèôğó: " << endl;
+		cout << "ĞĞµĞºĞ¾Ñ€Ñ€ĞµĞºÑ‚Ğ½Ğ¾ Ğ²Ğ²ĞµĞ´ĞµĞ½Ğ½Ñ‹Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ. ĞŸĞ¾Ğ¶Ğ°Ğ»ÑƒĞ¹ÑÑ‚Ğ°, Ğ²Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ñ†Ğ¸Ñ„Ñ€Ñƒ: " << endl;
 	}
 	return variable;
 }
 
-// Ôóíêöèÿ ïğîâåğêè êîğğåêòíîñòè ââîäà äëÿ ïåğåìåííîé òèïà int
+// Ğ¤ÑƒĞ½ĞºÑ†Ğ¸Ñ Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ĞºĞ¸ ĞºĞ¾Ñ€Ñ€ĞµĞºÑ‚Ğ½Ğ¾ÑÑ‚Ğ¸ Ğ²Ğ²Ğ¾Ğ´Ğ° Ğ´Ğ»Ñ Ğ¿ĞµÑ€ĞµĞ¼ĞµĞ½Ğ½Ğ¾Ğ¹ Ñ‚Ğ¸Ğ¿Ğ° int
 int NumInInt() {
 	int variable;
 	while (!(cin >> variable) || (cin.peek() != '\n')) {
 		cin.clear();
 		while (cin.get() != '\n');
-		cout << "Íåêîğğåêòíî ââåäåííûå äàííûå. Ïîæàëóéñòà, ââåäèòå öèôğó: " << endl;
+		cout << "ĞĞµĞºĞ¾Ñ€Ñ€ĞµĞºÑ‚Ğ½Ğ¾ Ğ²Ğ²ĞµĞ´ĞµĞ½Ğ½Ñ‹Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ. ĞŸĞ¾Ğ¶Ğ°Ğ»ÑƒĞ¹ÑÑ‚Ğ°, Ğ²Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ñ†Ğ¸Ñ„Ñ€Ñƒ: " << endl;
 	}
 	return variable;
 }
 
-// Ôóíêöèÿ, ïğîâåğÿşùàÿ èñõîäíûå äàííûå íà ñîñòàâëåíèå ïğÿìîóãîëüíèêà èç íèõ
+// Ğ¤ÑƒĞ½ĞºÑ†Ğ¸Ñ, Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ÑÑÑ‰Ğ°Ñ Ğ¸ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ Ğ½Ğ° ÑĞ¾ÑÑ‚Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ğµ Ğ¿Ñ€ÑĞ¼Ğ¾ÑƒĞ³Ğ¾Ğ»ÑŒĞ½Ğ¸ĞºĞ° Ğ¸Ğ· Ğ½Ğ¸Ñ…
 bool CheckAngle(rectangle rec) {
 	double firstX = rec.rt.x - rec.lt.x;
 	double firstY = rec.rt.y - rec.lt.y;
@@ -39,20 +39,20 @@ bool CheckAngle(rectangle rec) {
 			return true;
 		else {
 			cout << endl;
-			cout << "Ââåäåííûå Âàìè êîîğäèíàòû íå îáğàçóşò ïğÿìîóãîëüíèê. Ïîæàëóéñòà, ïîïğîáóéòå åùå ğàç: " << endl;
+			cout << "Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ½Ñ‹Ğµ Ğ’Ğ°Ğ¼Ğ¸ ĞºĞ¾Ğ¾Ñ€Ğ´Ğ¸Ğ½Ğ°Ñ‚Ñ‹ Ğ½Ğµ Ğ¾Ğ±Ñ€Ğ°Ğ·ÑƒÑÑ‚ Ğ¿Ñ€ÑĞ¼Ğ¾ÑƒĞ³Ğ¾Ğ»ÑŒĞ½Ğ¸Ğº. ĞŸĞ¾Ğ¶Ğ°Ğ»ÑƒĞ¹ÑÑ‚Ğ°, Ğ¿Ğ¾Ğ¿Ñ€Ğ¾Ğ±ÑƒĞ¹Ñ‚Ğµ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·: " << endl;
 			cout << endl;
 			return false;
 		}
 	}
 	else {
 		cout << endl;
-		cout << "Ââåäåííûå Âàìè êîîğäèíàòû íå îáğàçóşò ïğÿìîóãîëüíèê. Ïîæàëóéñòà, ïîïğîáóéòå åùå ğàç: " << endl;
+		cout << "Ğ’Ğ²ĞµĞ´ĞµĞ½Ğ½Ñ‹Ğµ Ğ’Ğ°Ğ¼Ğ¸ ĞºĞ¾Ğ¾Ñ€Ğ´Ğ¸Ğ½Ğ°Ñ‚Ñ‹ Ğ½Ğµ Ğ¾Ğ±Ñ€Ğ°Ğ·ÑƒÑÑ‚ Ğ¿Ñ€ÑĞ¼Ğ¾ÑƒĞ³Ğ¾Ğ»ÑŒĞ½Ğ¸Ğº. ĞŸĞ¾Ğ¶Ğ°Ğ»ÑƒĞ¹ÑÑ‚Ğ°, Ğ¿Ğ¾Ğ¿Ñ€Ğ¾Ğ±ÑƒĞ¹Ñ‚Ğµ ĞµÑ‰Ğµ Ñ€Ğ°Ğ·: " << endl;
 		cout << endl;
 		return false;
 	}
 }
 
-// Ôóíêöèÿ, ïğîâåğÿşùàÿ èñõîäíûå äàííûå íà ñîñòàâëåíèå ïğÿìîóãîëüíèêà èç íèõ äëÿ òåñòèğîâàíèÿ
+// Ğ¤ÑƒĞ½ĞºÑ†Ğ¸Ñ, Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ÑÑÑ‰Ğ°Ñ Ğ¸ÑÑ…Ğ¾Ğ´Ğ½Ñ‹Ğµ Ğ´Ğ°Ğ½Ğ½Ñ‹Ğµ Ğ½Ğ° ÑĞ¾ÑÑ‚Ğ°Ğ²Ğ»ĞµĞ½Ğ¸Ğµ Ğ¿Ñ€ÑĞ¼Ğ¾ÑƒĞ³Ğ¾Ğ»ÑŒĞ½Ğ¸ĞºĞ° Ğ¸Ğ· Ğ½Ğ¸Ñ… Ğ´Ğ»Ñ Ñ‚ĞµÑÑ‚Ğ¸Ñ€Ğ¾Ğ²Ğ°Ğ½Ğ¸Ñ
 bool CheckAngle_textless(rectangle rec) {
 	double firstX = rec.rt.x - rec.lt.x;
 	double firstY = rec.rt.y - rec.lt.y;
@@ -73,7 +73,7 @@ bool CheckAngle_textless(rectangle rec) {
 	}
 }
 
-// Ôóíêöèÿ, ïğîâåğÿşùàÿ ïåğåñå÷åíèå îòğåçêîâ èç äàííûõ òî÷åê
+// Ğ¤ÑƒĞ½ĞºÑ†Ğ¸Ñ, Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ÑÑÑ‰Ğ°Ñ Ğ¿ĞµÑ€ĞµÑĞµÑ‡ĞµĞ½Ğ¸Ğµ Ğ¾Ñ‚Ñ€ĞµĞ·ĞºĞ¾Ğ² Ğ¸Ğ· Ğ´Ğ°Ğ½Ğ½Ñ‹Ñ… Ñ‚Ğ¾Ñ‡ĞµĞº
 bool Intersection(double ax, double ay, double bx, double by, double cx, double cy, double dx, double dy) {
 	if (((ay - by) / (cy - dy)) != ((bx - ax) / (dx - cx))) {
 		double zero = 0;
@@ -129,7 +129,7 @@ bool Intersection(double ax, double ay, double bx, double by, double cx, double 
 	} 
 }
 
-// Ôóíêöèÿ, ïğîâåğÿşùàÿ íàëè÷èå îáùåé îáëàñòè ó äâóõ ïğÿìîóãîëüíèêîâ
+// Ğ¤ÑƒĞ½ĞºÑ†Ğ¸Ñ, Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ÑÑÑ‰Ğ°Ñ Ğ½Ğ°Ğ»Ğ¸Ñ‡Ğ¸Ğµ Ğ¾Ğ±Ñ‰ĞµĞ¹ Ğ¾Ğ±Ğ»Ğ°ÑÑ‚Ğ¸ Ñƒ Ğ´Ğ²ÑƒÑ… Ğ¿Ñ€ÑĞ¼Ğ¾ÑƒĞ³Ğ¾Ğ»ÑŒĞ½Ğ¸ĞºĞ¾Ğ²
 bool Intersection_Result(rectangle firstRec, rectangle secondRec) {
 	double i, j, k, kS, jS;
 	bool topTop = Intersection(firstRec.lt.x, firstRec.lt.y, firstRec.rt.x, firstRec.rt.y, secondRec.lt.x, secondRec.lt.y, secondRec.rt.x, secondRec.rt.y);
@@ -212,17 +212,17 @@ bool Intersection_Result(rectangle firstRec, rectangle secondRec) {
 			jS = 0;
 	}
 	if ((topTop || topRight || topBottom || topLeft || rightTop || rightRight || rightBottom || rightLeft || bottomTop || bottomRight || bottomBottom || bottomLeft || leftTop || leftRight || leftBottom || leftLeft || recInRecCount || recInRecCountS) == 0) {
-		cout << "Ïğÿìîóãîëüíèêè íå èìåşò îáùåé îáëàñòè" << endl;
+		cout << "ĞŸÑ€ÑĞ¼Ğ¾ÑƒĞ³Ğ¾Ğ»ÑŒĞ½Ğ¸ĞºĞ¸ Ğ½Ğµ Ğ¸Ğ¼ĞµÑÑ‚ Ğ¾Ğ±Ñ‰ĞµĞ¹ Ğ¾Ğ±Ğ»Ğ°ÑÑ‚Ğ¸" << endl;
 		return false;
 	}
 	else {
 		cout << endl;
-		cout << "Ïğÿìîóãîëüíèêè èìåşò îáùóş îáëàñòü" << endl;
+		cout << "ĞŸÑ€ÑĞ¼Ğ¾ÑƒĞ³Ğ¾Ğ»ÑŒĞ½Ğ¸ĞºĞ¸ Ğ¸Ğ¼ĞµÑÑ‚ Ğ¾Ğ±Ñ‰ÑƒÑ Ğ¾Ğ±Ğ»Ğ°ÑÑ‚ÑŒ" << endl;
 		return true;
 	}
 }
 
-// Ôóíêöèÿ, ïğîâåğÿşùàÿ íàëè÷èå îáùåé îáëàñòè ó äâóõ ïğÿìîóãîëüíèêîâ äëÿ òåñòèğîâàíèÿ
+// Ğ¤ÑƒĞ½ĞºÑ†Ğ¸Ñ, Ğ¿Ñ€Ğ¾Ğ²ĞµÑ€ÑÑÑ‰Ğ°Ñ Ğ½Ğ°Ğ»Ğ¸Ñ‡Ğ¸Ğµ Ğ¾Ğ±Ñ‰ĞµĞ¹ Ğ¾Ğ±Ğ»Ğ°ÑÑ‚Ğ¸ Ñƒ Ğ´Ğ²ÑƒÑ… Ğ¿Ñ€ÑĞ¼Ğ¾ÑƒĞ³Ğ¾Ğ»ÑŒĞ½Ğ¸ĞºĞ¾Ğ² Ğ´Ğ»Ñ Ñ‚ĞµÑÑ‚Ğ¸Ñ€Ğ¾Ğ²Ğ°Ğ½Ğ¸Ñ
 bool Intersection_Result_textless(rectangle firstRec, rectangle secondRec) {
 	double i, j, k, kS, jS;
 	bool topTop = Intersection(firstRec.lt.x, firstRec.lt.y, firstRec.rt.x, firstRec.rt.y, secondRec.lt.x, secondRec.lt.y, secondRec.rt.x, secondRec.rt.y);
