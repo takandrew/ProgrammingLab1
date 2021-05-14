@@ -10,15 +10,15 @@ struct rectangle {
 	point rt; //right top
 };
 
-double NumInDouble(); // Функция проверки корректности ввода для переменной типа double
-int NumInInt(); // Функция проверки корректности ввода для переменной типа int
-bool CheckAngle(rectangle rec); // Функция, проверяющая исходные данные 
-                                     //на составление прямоугольника из них
-bool CheckAngle_textless(rectangle rec); // Функция, проверяющая исходные
-                                                            //данные на составление прямоугольника из них для тестирования
-bool Intersection(double ax, double ay, double bx, double by, double cx, double cy, double dx, double dy); // Функция,
-                                                                  //проверяющая пересечение отрезков из данных точек
-bool Intersection_Result(rectangle firstRec, rectangle secondRec); // Функция, проверяющая наличие
-                                                             //общей области у двух прямоугольников
-bool Intersection_Result_textless(rectangle firstRec, rectangle secondRec); // Функция, проверяющая наличие
-                                                            //общей области у двух прямоугольников для тестирования
+double NumInDouble(); // Р¤СѓРЅРєС†РёСЏ РїСЂРѕРІРµСЂРєРё РєРѕСЂСЂРµРєС‚РЅРѕСЃС‚Рё РІРІРѕРґР° РґР»СЏ РїРµСЂРµРјРµРЅРЅРѕР№ С‚РёРїР° double
+int NumInInt(); // Р¤СѓРЅРєС†РёСЏ РїСЂРѕРІРµСЂРєРё РєРѕСЂСЂРµРєС‚РЅРѕСЃС‚Рё РІРІРѕРґР° РґР»СЏ РїРµСЂРµРјРµРЅРЅРѕР№ С‚РёРїР° int
+bool CheckAngle(rectangle rec); // Р¤СѓРЅРєС†РёСЏ, РїСЂРѕРІРµСЂСЏСЋС‰Р°СЏ РёСЃС…РѕРґРЅС‹Рµ РґР°РЅРЅС‹Рµ 
+                                     //РЅР° СЃРѕСЃС‚Р°РІР»РµРЅРёРµ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР° РёР· РЅРёС…
+bool CheckAngle_textless(rectangle rec); // Р¤СѓРЅРєС†РёСЏ, РїСЂРѕРІРµСЂСЏСЋС‰Р°СЏ РёСЃС…РѕРґРЅС‹Рµ
+                                                            //РґР°РЅРЅС‹Рµ РЅР° СЃРѕСЃС‚Р°РІР»РµРЅРёРµ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР° РёР· РЅРёС… РґР»СЏ С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ
+bool Intersection(double ax, double ay, double bx, double by, double cx, double cy, double dx, double dy); // Р¤СѓРЅРєС†РёСЏ,
+                                                                  //РїСЂРѕРІРµСЂСЏСЋС‰Р°СЏ РїРµСЂРµСЃРµС‡РµРЅРёРµ РѕС‚СЂРµР·РєРѕРІ РёР· РґР°РЅРЅС‹С… С‚РѕС‡РµРє
+bool Intersection_Result(rectangle firstRec, rectangle secondRec); // Р¤СѓРЅРєС†РёСЏ, РїСЂРѕРІРµСЂСЏСЋС‰Р°СЏ РЅР°Р»РёС‡РёРµ
+                                                             //РѕР±С‰РµР№ РѕР±Р»Р°СЃС‚Рё Сѓ РґРІСѓС… РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєРѕРІ
+bool Intersection_Result_textless(rectangle firstRec, rectangle secondRec); // Р¤СѓРЅРєС†РёСЏ, РїСЂРѕРІРµСЂСЏСЋС‰Р°СЏ РЅР°Р»РёС‡РёРµ
+                                                            //РѕР±С‰РµР№ РѕР±Р»Р°СЃС‚Рё Сѓ РґРІСѓС… РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєРѕРІ РґР»СЏ С‚РµСЃС‚РёСЂРѕРІР°РЅРёСЏ
